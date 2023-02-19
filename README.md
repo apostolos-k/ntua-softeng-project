@@ -34,7 +34,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd SoftEng22-60
+  cd ntua-softeng-project
 ```
 
 Install backend dependencies
@@ -55,7 +55,7 @@ Install frontend dependencies
 Go to the project directory
 
 ```bash
-  cd SoftEng22-60
+  cd ntua-softeng-project
 ```
 
 Start backend server (https://localhost:9103)
