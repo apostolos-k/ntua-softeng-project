@@ -1,0 +1,256 @@
+{
+    "questionnaireID": "QQ001",
+    "questionnaireTitle": "Εμπειρία σε έκθεση αμαξιών",
+    "keywords": [
+        "αμάξι",
+        "έκθεση",
+        "εμπειρία"
+    ],
+    "questions": [
+        {
+            "qID": "P00",
+            "qtext": "Ποιό είναι το mail σας?",
+            "required": "FALSE",
+            "type": "profile",
+            "options": [
+                {
+                    "optID": "P00TXT",
+                    "opttxt": "<open string>",
+                    "nextqID": "P01"
+                }
+            ]
+        },
+        {
+            "qID": "P01",
+            "qtext": "Ποια είναι η ηλικία σας",
+            "required": "TRUE",
+            "type": "profile",
+            "options": [
+                {
+                    "optID": "P01A1",
+                    "opttxt": "<18",
+                    "nextqID": "Q01"
+                },
+                {
+                    "optID": "P01A2",
+                    "opttxt": "18-24",
+                    "nextqID": "Q01"
+                },
+                {
+                    "optID": "P01A3",
+                    "opttxt": "25-34",
+                    "nextqID": "Q01"
+                },
+                {
+                    "optID": "P01A4",
+                    "opttxt": "35-44",
+                    "nextqID": "Q01"
+                },
+                {
+                    "optID": "P01A5",
+                    "opttxt": "45-54",
+                    "nextqID": "Q01"
+                },
+                {
+                    "optID": "P01A6",
+                    "opttxt": "55-64",
+                    "nextqID": "Q01"
+                },
+                {
+                    "optID": "P01A7",
+                    "opttxt": "65+",
+                    "nextqID": "Q01"
+                }
+            ]
+        },
+        {
+            "qID": "Q01",
+            "qtext": "Έχετε παρακολουθήσει κάποια έκθεση προηγουμένως;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q01A1",
+                    "opttxt": "Ναι",
+                    "nextqID": "Q02"
+                },
+                {
+                    "optID": "Q01A2",
+                    "opttxt": "Οχι",
+                    "nextqID": "Q03"
+                }
+            ]
+        },
+        {
+            "qID": "Q02",
+            "qtext": "Σας άρεσε η έκθεση που παρακολουθήσατε;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q02A1",
+                    "opttxt": "Ναι",
+                    "nextqID": "Q04"
+                },
+                {
+                    "optID": "Q02A2",
+                    "opttxt": "Οχι",
+                    "nextqID": "Q04"
+                }
+            ]
+        },
+        {
+            "qID": "Q03",
+            "qtext": "Για ποιο λόγο δεν έχετε παρακολουθήσει κάποια έκθεση προηγουμένως;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q03A1",
+                    "opttxt": "Δεν μάρεσαν τα αμάξια",
+                    "nextqID": "Q04"
+                },
+                {
+                    "optID": "Q03A2",
+                    "opttxt": "Δεν υπήρχαν στην περιοχή μου ",
+                    "nextqID": "Q04"
+                },
+                {
+                    "optID": "Q03A3",
+                    "opttxt": "Other",
+                    "nextqID": "Q04"
+                }
+            ]
+        },
+        {
+            "qID": "Q04",
+            "qtext": "Σκοπεύεται να αγοράσετε κάποιο αμάξι τους επόμενους μήνες;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q04A1",
+                    "opttxt": "Ναι",
+                    "nextqID": "Q04"
+                },
+                {
+                    "optID": "Q04A2",
+                    "opttxt": "Όχι",
+                    "nextqID": "Q04"
+                },
+                {
+                    "optID": "Q04A3",
+                    "opttxt": "Other",
+                    "nextqID": "Q04"
+                }
+            ]
+        },
+        {
+            "qID": "Q05",
+            "qtext": "Σας επηρέασε η έκθεση;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q05A1",
+                    "opttxt": "Ναι",
+                    "nextqID": "Q06"
+                },
+                {
+                    "optID": "Q05A2",
+                    "opttxt": "Όχι",
+                    "nextqID": "Q06"
+                }
+            ]
+        },
+        {
+            "qID": "Q06",
+            "qtext": "Σας ενδιαφέρουν οι νέες τεχνολογίες των αμαξιών;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q06A1",
+                    "opttxt": "Ναι",
+                    "nextqID": "Q07"
+                },
+                {
+                    "optID": "Q06A2",
+                    "opttxt": "Όχι",
+                    "nextqID": "Q08"
+                }
+            ]
+        },
+        {
+            "qID": "Q07",
+            "qtext": "Ποιο τεχνολογικό κομμάτι σας ενδιαφέρει περισσότερο;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q07A1",
+                    "opttxt": "Είδος καυσίμου",
+                    "nextqID": "Q08"
+                },
+                {
+                    "optID": "Q07A2",
+                    "opttxt": "Ανέσεις που προσφέρει το εσωτερικό",
+                    "nextqID": "Q08"
+                },
+                {
+                    "optID": "Q07A3",
+                    "opttxt": "Αυτόματο παρκάρισμα",
+                    "nextqID": "Q08"
+                },
+                {
+                    "optID": "Q07A4",
+                    "opttxt": "Αυτόματη οδήγηση",
+                    "nextqID": "Q08"
+                },
+                {
+                    "optID": "Q07A4",
+                    "opttxt": "Άλλο",
+                    "nextqID": "Q08"
+                }
+
+            ]
+        },
+        {
+            "qID": "Q08",
+            "qtext": "Μείνατε ευχαριστημένοι από την εκδήλωση;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "Q08A1",
+                    "opttxt": "Πολύ",
+                    "nextqID": "-"
+                },
+                {
+                    "optID": "Q08A2",
+                    "opttxt": "Αρκετά",
+                    "nextqID": "-"
+                },
+                {
+                    "optID": "Q08A3",
+                    "opttxt": "Όχι",
+                    "nextqID": "Q08"
+                }
+
+            ]
+        },
+        {
+            "qID": "Q09",
+            "qtext": "Με δεδομένο ότι απαντήσατε [*Q08A3] στην ερώτηση [*Q08]:Τι θα θέλατε να αλλάξετε ;",
+            "required": "TRUE",
+            "type": "question",
+            "options": [
+                {
+                    "optID": "P08TXT",
+                    "opttxt": "<open string>",
+                    "nextqID": "-"
+                }
+            ]
+        }
+    ]
+}

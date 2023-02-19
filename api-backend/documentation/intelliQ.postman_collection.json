@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "3a2ece10-dc8d-4fc3-8ce1-26afc40bb482",
+		"name": "intelliQ",
+		"description": "A smart questionnaire software API implimentation.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25855623"
+	},
+	"item": [
+		{
+			"name": "Administration Endpoints",
+			"item": [
+				{
+					"name": "/admin/healthcheck",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/admin/healthcheck",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"admin",
+								"healthcheck"
+							]
+						},
+						"description": "End-to-end database connectivity check."
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/questionnaire_upd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "[absolute path]/SoftEng22-60/data/questionnaire.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/admin/questionnaire_upd",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"admin",
+								"questionnaire_upd"
+							]
+						},
+						"description": "Upload questionnaire to database."
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/resetall",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/admin/resetall",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"admin",
+								"resetall"
+							]
+						},
+						"description": "Reset everything in database (questionnaires, answers)."
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/resetq/:questionnaireID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/admin/resetq/:questionnaireID",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"admin",
+								"resetq",
+								":questionnaireID"
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								}
+							]
+						},
+						"description": "Reset answers of a specific questionnaire."
+					},
+					"response": []
+				}
+			],
+			"description": "These endpoints are used by administrators for database managment and database connection ckeck."
+		},
+		{
+			"name": "Operational Endpoints",
+			"item": [
+				{
+					"name": "/questionnaire/:questionnaireID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/questionnaire/:questionnaireID?format=json",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"questionnaire",
+								":questionnaireID"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "json"
+								}
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								}
+							]
+						},
+						"description": "View a questionnaire."
+					},
+					"response": []
+				},
+				{
+					"name": "/question/:questionnaireID/:questionID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/question/:questionnaireID/:questionID?format=json",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"question",
+								":questionnaireID",
+								":questionID"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "json"
+								}
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								},
+								{
+									"key": "questionID",
+									"value": "Q01"
+								}
+							]
+						},
+						"description": "View a question."
+					},
+					"response": []
+				},
+				{
+					"name": "/doanswer/:questionnaireID/:questionID/:session/:optionID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/doanswer/:questionnaireID/:questionID/:session/:optionID",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"doanswer",
+								":questionnaireID",
+								":questionID",
+								":session",
+								":optionID"
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								},
+								{
+									"key": "questionID",
+									"value": "Q01"
+								},
+								{
+									"key": "session",
+									"value": "AAAA"
+								},
+								{
+									"key": "optionID",
+									"value": "Q01A1"
+								}
+							]
+						},
+						"description": "Submit an answer."
+					},
+					"response": []
+				},
+				{
+					"name": "/getsessionanswers/:questionnaireID/:session",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/getsessionanswers/:questionnaireID/:session?format=json",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"getsessionanswers",
+								":questionnaireID",
+								":session"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "json"
+								}
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								},
+								{
+									"key": "session",
+									"value": "AAAA"
+								}
+							]
+						},
+						"description": "View answers by a session."
+					},
+					"response": []
+				},
+				{
+					"name": "/getquestionanswers/:questionnaireID/:questionID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/getquestionanswers/:questionnaireID/:questionID?format=json",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"getquestionanswers",
+								":questionnaireID",
+								":questionID"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "json"
+								}
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								},
+								{
+									"key": "questionID",
+									"value": "Q01"
+								}
+							]
+						},
+						"description": "View answers by question."
+					},
+					"response": []
+				},
+				{
+					"name": "/exportanswers/:questionnaireID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:9103/intelliq_api/exportanswers/:questionnaireID",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "9103",
+							"path": [
+								"intelliq_api",
+								"exportanswers",
+								":questionnaireID"
+							],
+							"variable": [
+								{
+									"key": "questionnaireID",
+									"value": "QQ000"
+								}
+							]
+						},
+						"description": "Use case: export answers to CSV or JSON."
+					},
+					"response": []
+				}
+			],
+			"description": "These endpoints are used by users to allow them to interact with the intelliQ software."
+		}
+	]
+}
