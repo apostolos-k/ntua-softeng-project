@@ -28,7 +28,7 @@ A project for the Software Engineering course at Ece Ntua 2022-23, in which we i
 Clone the project
 
 ```bash
-  git clone https://github.com/ntua/SoftEng22-60.git
+  git clone https://github.com/apostolos-k/ntua-softeng-project.git
 ```
 
 Go to the project directory
