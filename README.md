@@ -1,7 +1,7 @@
 
 # IntelliQ
 
-A project for the Software Engineering course at Ece Ntua 2022-23, in which we implement a smart questionnaire software rest api and web interface with basic functionalities.
+A project for the Software Engineering course at Ece Ntua 2022-23, in which we implement a smart questionnaire software Rest API and web interface with basic functionalities.
 
 
 
