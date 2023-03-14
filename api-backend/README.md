@@ -63,5 +63,13 @@ More detailed information about the technologies, scripts and dependencies used 
 - Accessible with VS Code by hovering over each controller's name, inside `/routes` folder.
 
 
-## Info
-For running the https server and connecting to the database, contact us for the ssl key and certificate and the database credentials.
+## Https and Database
+For running the https server, generate your key and certificate by running the following cpmmand on terminal:
+
+```bash
+  openssl req -nodes -new -x509 -keyout server.key -out server.cert
+```
+
+On `Common Name` option choose localhost.
+
+If you are using Windows, before running the command on terminal, instal the OpenSSL tool by following this [link](https://slproweb.com/products/Win32OpenSSL.html)
