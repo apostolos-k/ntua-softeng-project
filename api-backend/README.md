@@ -70,7 +70,7 @@ For running the https server, generate your key and certificate by running the f
   openssl req -nodes -new -x509 -keyout server.key -out server.cert
 ```
 
-On Common Name option choose localhost.
+On Common Name field, type localhost.
 
 If you are using Windows, before running this command on terminal, install the OpenSSL tool by following this [link](https://slproweb.com/products/Win32OpenSSL.html).
 
