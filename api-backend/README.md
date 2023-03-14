@@ -75,4 +75,4 @@ On Common Name option choose localhost.
 If you are using Windows, before running the command on terminal, instal the OpenSSL tool by following this [link](https://slproweb.com/products/Win32OpenSSL.html).
 
 ## Database
-Create a database at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and replace the `MONGO_URI` with your credentials, in `server.js` file and also in every file inside `/test` folder.
+Create a database at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and replace the `MONGODB_URI` with your credentials, in `server.js` file and also in every file inside `/test` folder.
