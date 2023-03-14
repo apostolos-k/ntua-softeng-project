@@ -72,7 +72,7 @@ For running the https server, generate your key and certificate by running the f
 
 On Common Name option choose localhost.
 
-If you are using Windows, before running the command on terminal, instal the OpenSSL tool by following this [link](https://slproweb.com/products/Win32OpenSSL.html).
+If you are using Windows, before running this command on terminal, install the OpenSSL tool by following this [link](https://slproweb.com/products/Win32OpenSSL.html).
 
 ## Database
-Create a database at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and replace the `MONGODB_URI` with your connection string, in `server.js` file and in every file inside `/test` folder.
+Create a database at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and replace the `MONGODB_URI` with your connection string, inside `server.js` file and every file in `/test` folder.
